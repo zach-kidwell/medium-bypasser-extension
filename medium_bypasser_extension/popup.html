@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Medium Bypasser</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <div class="header">
+      <img src="icon.png" alt="Logo" class="logo" />
+      <span class="title">Medium Bypasser</span>
+    </div>
+
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggleExtension">
+        <span class="slider round"></span>
+      </label>
+      <span class="label-text">Enable Extension</span>
+    </div>
+
+    <button id="viewArchiveBtn">View Archived Article</button>
+
+    <!-- ✅ New history size selector -->
+    <div class="history-limit">
+      <label for="historyLimit">History Size:</label>
+      <select id="historyLimit">
+        <option value="3">3</option>
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+
+    <h3>Recent Archives</h3>
+    <ul id="archiveList"></ul>
+    <button id="clearHistoryBtn" style="margin-top: 10px;">Clear History</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

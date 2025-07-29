@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Medium Bypasser",
+  "version": "1.1",
+  "description": "Bypass Medium paywalls using archive.is",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://medium.com/*",
+    "https://archive.is/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://archive.is/*", "*://archive.today/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}

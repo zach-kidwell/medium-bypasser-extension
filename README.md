@@ -1,6 +1,6 @@
 # Medium.com Paywall Bypasser
 
-**This Chrome extension automatically redirects Medium articles to archived versions on archive.is, allowing users to bypass paywalls and read the full content without logging in or subscribing.**
+**This Chrome extension automatically redirects Medium articles to archived versions on archive.is, allowing users to bypass paywalls and read the full content without logging in or subscribing. Originally, this was meant to work on nknews.org, but that was deprecated. For more info, see: https://github.com/zach-kidwell/ArticleArchiver **
 
 ---
 
@@ -45,3 +45,4 @@ Medium puts a lot of content behind a paywall, and I wanted a quick way to acces
 This extension does **not** archive the page itself, it just redirects to an archived version if one exists (or lets you open it manually). It uses archive.is since it's reliable and doesn’t require an account. If you click **View Archived Article** and there is not an archive already, you can click **archive this url**. After archiving, repeat the process and you will be able to view the archived article.
 
 ![archiveExample](screenshots/archiveUrl.png)
+
